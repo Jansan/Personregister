@@ -8,10 +8,22 @@ namespace Personregister
         {
             try
             {
-                Person person = new Person();
-                person.Age = -20;
-            Console.WriteLine(person.Age);
+                //    Person person = new Person();
+                //    person.LastName = "jansan";
+                //Console.WriteLine(person.LastName);
+                PersonHandler personhandler = new PersonHandler();
+                
+                var person = personhandler.CreatePerson(20, "jansan", "Mariyathas", 173, 80);
+                Console.WriteLine(personhandler.GetAge(person));
+                Console.WriteLine(personhandler.GetFirstName(person));
+                Console.WriteLine(personhandler.GetLastName(person));
+                Console.WriteLine(personhandler.GetHeight(person));
+                Console.WriteLine(personhandler.GetWeight(person));
 
+
+
+
+                
             }
             catch (Exception e)
             {
