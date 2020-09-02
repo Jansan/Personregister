@@ -9,7 +9,7 @@ namespace Personregister
     {
        
         private string firstName;
-        [Required(ErrorMessage = "Firstname is required.")]
+        
         public string FirstName
         {
             get 
@@ -32,7 +32,7 @@ namespace Personregister
         }
        
         private string lastName;
-        [Required(ErrorMessage = "LastName cannot be null")]
+       
         public string LastName
         {
             get
@@ -45,7 +45,7 @@ namespace Personregister
                 
                     throw new ArgumentNullException("Lastname cannot be null");
                 if (value.Length < 3 && value.Length < 15)
-                    throw new ArgumentOutOfRangeException("LastName cannot be minst 2 and longer than 15");
+                    throw new ArgumentOutOfRangeException("LastName cannot be minst 3 and longer than 15");
                
                 lastName = value;
             }
@@ -57,7 +57,7 @@ namespace Personregister
             get { return age; }
             set
             {
-                if (age > 0)
+                if (value <= 0)
                     throw new ArgumentException("Age can only be greater than 0");
                 age = value;
             }
