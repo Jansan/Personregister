@@ -14,16 +14,14 @@ namespace Personregister
                 PersonHandler personhandler = new PersonHandler();
                 
                 var person = personhandler.CreatePerson(20, "jansan", "Mariyathas", 173, 80);
-                Console.WriteLine(personhandler.GetAge(person));
-                Console.WriteLine(personhandler.GetFirstName(person));
-                Console.WriteLine(personhandler.GetLastName(person));
-                Console.WriteLine(personhandler.GetHeight(person));
-                Console.WriteLine(personhandler.GetWeight(person));
-
-
-
-
+                Console.WriteLine(
+                    $"{personhandler.GetAge(person)}" +
+                    $"{personhandler.GetFirstName(person)}" +
+                    $"{personhandler.GetLastName(person)}" +
+                    $"{personhandler.GetHeight(person)}" +
+                    $"{personhandler.GetWeight(person)}");
                 
+                    
             }
             catch (Exception e)
             {
