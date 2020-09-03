@@ -1,4 +1,6 @@
-﻿namespace Arv
+﻿using System.Reflection.PortableExecutable;
+
+namespace Arv
 {
     abstract class Animal
     {
@@ -37,24 +39,24 @@
        
 
     }
-    class Horse: Animal
+    class Wolf : Animal
     {
-        private int speed;
+        private double taillong;
 
-        public int Speed
+        public double TailLong
         {
-            get { return speed; }
-            set { speed = value; }
+            get { return taillong; }
+            set { taillong = value; }
         }
 
-        public Horse(string name, double weight, int age, int speed) :base(name, weight, age)
+        public Wolf(string name, double weight, int age) :base(name, weight, age)
         {
-            Speed = speed;
+            TailLong = taillong;
         }
 
         public override string DoSound()
         {
-            return "Horse sound";
+            return "Wolf Sound";
         }
     }
 }
