@@ -14,7 +14,7 @@ namespace Arv
             set { color = value; }
         }
 
-        public Flamingo(string name, double weight, int age, int wingSpan) :base(name, weight, age, wingSpan)
+        public Flamingo(string name, double weight, int age, int wingSpan, string color) :base(name, weight, age, wingSpan)
         {
             Color = color;
         }

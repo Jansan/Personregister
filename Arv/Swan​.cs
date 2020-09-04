@@ -14,7 +14,7 @@ namespace Arv
             set { flying = value; }
         }
 
-        public Swan​(string name, double weight, int age, int wingSpan) :base(name, weight, age, wingSpan)
+        public Swan​(string name, double weight, int age, int wingSpan, bool flying) :base(name, weight, age, wingSpan)
         {
             Flying = flying;
         }

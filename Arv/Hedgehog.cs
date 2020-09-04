@@ -11,7 +11,7 @@
         }
 
 
-        public Hedgehog​(string name, double weight, int age) :base(name, weight, age)
+        public Hedgehog​(string name, double weight, int age, string color) :base(name, weight, age)
         {
             Color = color;
         }

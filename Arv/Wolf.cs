@@ -10,7 +10,7 @@
             set { taillong = value; }
         }
 
-        public Wolf(string name, double weight, int age) :base(name, weight, age)
+        public Wolf(string name, double weight, int age, double taillong) :base(name, weight, age)
         {
             TailLong = taillong;
         }

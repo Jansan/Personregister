@@ -11,7 +11,7 @@
         }
 
 
-        public Dog(string name, double weight, int age,double height) :base(name, weight, age)
+        public Dog(string name, double weight, int age, double height) :base(name, weight, age)
         {
             Height = height;
         }

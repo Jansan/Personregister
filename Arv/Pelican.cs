@@ -14,7 +14,7 @@ namespace Arv
             set { beakLong = value; }
         }
 
-        public Pelican(string name, double weight, int age, int wingSpan) :base(name, weight, age, wingSpan)
+        public Pelican(string name, double weight, int age, int wingSpan, double beakLong) :base(name, weight, age, wingSpan)
         {
             BeakLong = beakLong;
         }
