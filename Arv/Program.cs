@@ -56,16 +56,12 @@ namespace Arv
             {
                 if (animal is Dog dog)
                 {
-                    Console.WriteLine(dog.Stats()); 
+                    Console.WriteLine(dog.Stats());
+                    Console.WriteLine(dog.Eat());
                 }
             }
 
-            Console.WriteLine();
-            Console.WriteLine("write eat method from dog");
-            foreach (var animal in animals)
-            {
-                
-            }
+            
 
 
             // 3.2) Arv
