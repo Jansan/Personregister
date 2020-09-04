@@ -19,5 +19,10 @@
         {
             return "Horse sound";
         }
+
+        public override string Stats()
+        {
+            return $"{base.Stats()} Speed: {Speed}";
+        }
     }
 }

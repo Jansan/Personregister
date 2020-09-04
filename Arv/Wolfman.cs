@@ -15,6 +15,10 @@ namespace Arv
         {
             Console.WriteLine("Hello from wolfman");
         }
-        
+        public override string Stats()
+        {
+            return $"{base.Stats()}";
+        }
+
     }
 }

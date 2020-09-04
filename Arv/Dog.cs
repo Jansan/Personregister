@@ -19,5 +19,10 @@
         {
             return "Dog Sound";
         }
+
+        public override string Stats()
+        {
+            return $"{base.Stats()} Height: {Height}";
+        }
     }
 }

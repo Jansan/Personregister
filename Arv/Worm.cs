@@ -15,8 +15,14 @@
             Poisonous = poisonous;
         }
        public override string DoSound()
-        {
+       {
             return "Worm Sound";
+       }
+
+        public override string Stats()
+        {
+            return $"{base.Stats()} Poisonous: {Poisonous}";
         }
+
     }
 }

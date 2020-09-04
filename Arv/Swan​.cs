@@ -18,5 +18,9 @@ namespace Arv
         {
             Flying = flying;
         }
+        public override string Stats()
+        {
+            return $"{base.Stats()} Flying: {Flying}";
+        }
     }
 }

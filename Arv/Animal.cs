@@ -36,6 +36,11 @@ namespace Arv
         }
 
         public abstract string DoSound();
+
+        public virtual string Stats()
+        {
+            return $"Name: {Name} Weight: {Weight} Age: {Age}";
+        }
        
 
     }

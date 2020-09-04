@@ -18,5 +18,9 @@
         {
             return "Bird Sound";
         }
+        public override string Stats() 
+        {
+            return $"{base.Stats()} WingSpan: {WingSpan}";
+        }
     }
 }

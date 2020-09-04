@@ -18,5 +18,9 @@ namespace Arv
         {
             BeakLong = beakLong;
         }
+        public override string Stats()
+        {
+            return $"{base.Stats()} BeakLong: {BeakLong}";
+        }
     }
 }

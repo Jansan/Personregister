@@ -20,5 +20,9 @@
         {
             return "Hedgehog sound";
         }
+        public override string Stats()
+        {
+            return $"{base.Stats()} Color: {Color}";
+        }
     }
 }

@@ -19,5 +19,9 @@
         {
             return "Wolf Sound";
         }
+        public override string Stats()
+        {
+            return $"{base.Stats()} Taillong: {TailLong}";
+        }
     }
 }
