@@ -24,5 +24,10 @@
         {
             return $"{base.Stats()} Height: {Height}";
         }
+
+        public string Eat()
+        {
+            return "Dog eat dogfood everyday";
+        }
     }
 }

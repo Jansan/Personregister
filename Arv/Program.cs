@@ -37,18 +37,36 @@ namespace Arv
                     //((IPerson)animal).Talk();
                 }
                 Console.WriteLine(animal.Name);
-               // Console.WriteLine(typeof(Animal));
+                Console.WriteLine(animal.GetType());
             }
 
             List<Dog> dogs = new List<Dog>();
             dogs.Add(new Dog("Browny", 5, 12, 0.9));
             // dogs.Add(new Horse("Mia", 450, 25, 200));
-
+            Console.WriteLine();
+            Console.WriteLine("Animals Stats");
             foreach (var animal in animals)
             {
                 Console.WriteLine(animal.Stats());
                 
             }
+            Console.WriteLine();
+            Console.WriteLine("Get dog stats");
+            foreach (var animal in animals)
+            {
+                if (animal is Dog dog)
+                {
+                    Console.WriteLine(dog.Stats()); 
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("write eat method from dog");
+            foreach (var animal in animals)
+            {
+                
+            }
+
 
             // 3.2) Arv
             // 13. F: class Bird 
@@ -57,7 +75,8 @@ namespace Arv
             // 3.3) Polymorfism
             // 9.F: Kan inte konvertera från häst till hund.
             // 10. F: Animal list
-            // 13. F: skapade virtual method i Aminal classen och override methoden base classen.
+            // 13. F: skapade virtual method i Aminal classen och override methoden base classen kollar jag om det dog finns i animal classen hämtar.
+            // 17. F: Det är class Dog eget method det går inte hämta från Amimals
 
 
 
