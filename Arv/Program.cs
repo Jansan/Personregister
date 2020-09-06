@@ -29,7 +29,7 @@ namespace Arv
 
             foreach (var animal in animals)
             {
-                animal.DoSound();
+                Console.WriteLine(animal.DoSound());
                 if(animal is IPerson person)
                 {
                     person.Talk();
