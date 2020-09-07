@@ -19,6 +19,12 @@ namespace Arv
             Color = color;
         }
 
+        //Tips: Kan även överskugga (override) Bird:s DoSound method.
+        public override string DoSound()
+        {
+            return "Flaming sound";
+        }
+
         public override string Stats()
         {
             return $"{base.Stats()} Color: {Color}";

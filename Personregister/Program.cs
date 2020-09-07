@@ -23,7 +23,13 @@ namespace Personregister
                 
                     
             }
-            catch (Exception e)
+            //Tips: kan ha flera catch exceptions, en specifik för ArgumentException och en Exception för andra fel.
+
+            catch(ArgumentException e) //Fångar argument exceptions.
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e) //Fångar alla andra typer av exceptions.
             {
 
                 Console.WriteLine(e.Message);
